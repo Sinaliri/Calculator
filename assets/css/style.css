@@ -1,0 +1,63 @@
+body {
+  min-height: 500px;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .calculator {
+  width: 300px;
+  height: 500px;
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 10px 0 10px;
+}
+body .calculator .display {
+  margin: 20px 0 5px 0;
+  height: 80px;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 48px;
+}
+body .calculator .keypad .keypad-table {
+  height: 80%;
+  width: 100%;
+}
+body .calculator .keypad .keypad-table tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .calculator .keypad .keypad-table tr:first-child td {
+  background-color: #d4d4d2;
+}
+body .calculator .keypad .keypad-table tr td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  background-color: #505050;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px 100px 100px 100px;
+}
+body .calculator .keypad .keypad-table tr td:last-child {
+  background-color: #ff9500;
+}
+body .calculator .keypad .keypad-table tr td div.key {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body .calculator .keypad .keypad-table tr td.zero-num {
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */

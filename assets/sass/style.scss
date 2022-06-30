@@ -1,0 +1,63 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+body{
+    min-height: 500px;
+    height: 100vh;
+    background-color: $bg-color;
+@include d-flex(flex,center,center);
+    .calculator{
+        width: 300px;
+        height: 500px;
+        background-color: $bg-color;
+        color: $text-color;
+        @include rounded-corners(10px,10px,10px,10px);
+        @include margin-padding(0,10px,0,10px,false);
+        .display{
+            @include margin-padding(20px,0,5px,0);
+            height: 80px;
+            background-color: $bg-color;
+            @include d-flex(flex,flex-end,flex-end);
+            font-size: $display-font-size;
+        }
+        .keypad{
+            .keypad-table{
+                height: 80%;
+                width: 100%;
+                tr{
+                    width: 100%;
+                    @include d-flex(flex,space-between,center);
+                    flex-direction: row; 
+                    &:first-child td{
+                        background-color: $clear-key-color;
+                    }
+                    td{
+                        @include d-flex(flex,center,center);
+                        margin: 5px;
+                       background-color: $number-color;
+                        width: 60px;
+                        height: 60px;
+                        @include rounded-corners(100px,100px,100px,100px);
+                        &:last-child{
+                        background-color: $operator-colors;
+                        }
+                        div.key{
+                            height: 100%;
+                            width: 100%;
+                            @include d-flex(flex,center,center);   
+                            cursor: pointer;       
+                        }
+                       
+                     
+
+                     
+                    }
+                    td.zero-num{
+                        flex-grow: 1;
+                    }
+                    
+                }
+            }
+        }
+    
+    }
+}
